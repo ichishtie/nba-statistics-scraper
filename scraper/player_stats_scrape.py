@@ -5,7 +5,6 @@ import csv
 
 # Create an instance of Chrome WebDriver and then navigate to the NBA statistics page.
 # Then, force the instance to explicitly wait in order to allow all elements to load into the DOM.
-# browser = webdriver.Chrome('C:/users/ichis/appdata/local/temp/Rar$EXa0.659/chromedriver.exe')
 browser = webdriver.Chrome('C:/chromedriver.exe')
 browser.get('https://stats.nba.com/leaders/?Season=2017-18&SeasonType=Regular%20Season&PerMode=Totals')
 time.sleep(2)
