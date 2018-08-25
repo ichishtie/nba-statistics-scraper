@@ -1,6 +1,6 @@
 # nba-statistics-scraper
 
-A Python3 program that uses Selenium to scrape statistics from "https://stats.nba.com/." Currently, the program is limited to basic individual player statistics with plans to add team statistics.
+A Python3 program that uses Selenium to scrape statistics from [stats.nba.com](stats.nba.com) Currently, the program is limited to basic individual player statistics with plans to add team statistics.
 
 ### Instructions
 
@@ -8,7 +8,7 @@ A Python3 program that uses Selenium to scrape statistics from "https://stats.nb
 
 2. Clone the repository
    ```
-   git clone 
+   git clone https://github.com/ichishtie/nba-statistics-scraper
    ```
 
 ### Built With
