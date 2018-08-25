@@ -15,7 +15,6 @@ num_pages_element = browser.find_element_by_xpath("//div[@class='stats-table-pag
 list = [int(s) for s in num_pages_element.text.split() if s.isdigit()]
 num_pages = (list.pop())
 
-
 # Record the statistics for every individual player and append the player to the player list.
 i = 1
 j = 2
