@@ -7,9 +7,9 @@ A Python3 program that uses Selenium to scrape statistics from "https://stats.nb
 1. Open your command line or Terminal and navigate to the directory you would like to clone the repository.
 
 2. Clone the repository
-```
-git clone 
-```
+   ```
+   git clone 
+   ```
 
 ### Built With
 
