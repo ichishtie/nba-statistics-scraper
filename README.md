@@ -10,7 +10,7 @@ A Python3 program that uses Selenium to scrape statistics from [stats.nba.com](s
    ```
    Otherwise, download and install Selenium from [here](https://pypi.org/project/selenium/).
    
-2. To allow the program to interface with the Chrome browser, you must download [chomedriver](https://sites.google.com/a/chromium.org/chromedriver/downloads) and place it in your PATH.
+2. To allow the program to interface with the Chrome browser, you must download [chomedriver](https://sites.google.com/a/chromium.org/chromedriver/downloads) and place it in your PATH. Save the executable file in your C Drive and make sure that it is saved under the name "chromedriver.exe", otherwise you will have to change the code on line 8 to match the destination of the chromedriver executable.
 
 3. Open your command line or Terminal and navigate to the directory you would like to clone the repository.
 
