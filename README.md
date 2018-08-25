@@ -4,12 +4,35 @@ A Python3 program that uses Selenium to scrape statistics from [stats.nba.com](s
 
 ### Instructions
 
-1. Open your command line or Terminal and navigate to the directory you would like to clone the repository.
+1. This program requires Selenium. If you have pip, install using:
+   ```
+   pip install selenium
+   ```
+   Otherwise, download and install Selenium from [here](https://pypi.org/project/selenium/).
+   
+2. To allow the program to interface with the Chrome browser, you must download [chromedriver]     (https://sites.google.com/a/chromium.org/chromedriver/downloads) and place it in your PATH.
 
-2. Clone the repository
+3. Open your command line or Terminal and navigate to the directory you would like to clone the repository.
+
+4. Clone the repository
    ```
    git clone https://github.com/ichishtie/nba-statistics-scraper
    ```
+5. Navigate to the directory where you cloned the repository and then go to the folder labeled "scraper".
+   ```
+   cd scraper
+   ```
+6. Run the porogram.
+   Windows:
+   ```
+   python player_stats_scrape.py
+   ```
+   macOS:
+   ```
+   python3 player_stats_scrape.py
+   ```
+   
+Note: A CSV file will be created in the "scraper" folder. This file will contain the statistics gathered by the program.
 
 ### Built With
 
