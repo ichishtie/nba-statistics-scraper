@@ -22,7 +22,8 @@ A Python3 program that uses Selenium to scrape statistics from [stats.nba.com](s
    ```
    cd scraper
    ```
-6. Run the porogram.
+6. Run the program.
+   
    Windows:
    ```
    python player_stats_scrape.py
