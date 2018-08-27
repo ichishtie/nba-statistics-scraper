@@ -32,7 +32,7 @@ A Python3 program that uses Selenium to scrape statistics from [stats.nba.com](s
    
    Windows:
    ```
-   python player_stats_scrape.py
+   py player_stats_scrape.py
    ```
    macOS:
    If you have both Python2 and Python3 installed, run the program using:
