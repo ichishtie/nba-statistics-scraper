@@ -24,131 +24,19 @@ inner_counter = str(j)
 while k <= num_pages:
     try:
         player = []
-        player_name = browser.find_element_by_xpath('//tr[' + outer_counter + ']/td[' + inner_counter + ']').text
-        player.append(player_name)
-        j = j + 1
-        inner_counter = str(j)
 
-        games_played = browser.find_element_by_xpath('//tr[' + outer_counter + ']/td[' + inner_counter + ']').text
-        player.append(games_played)
-        j = j + 1
-        inner_counter = str(j)
-
-        minutes_played = browser.find_element_by_xpath('//tr[' + outer_counter + ']/td[' + inner_counter + ']').text
-        player.append(minutes_played)
-        j = j + 1
-        inner_counter = str(j)
-
-        points_made = browser.find_element_by_xpath('//tr[' + outer_counter + ']/td[' + inner_counter + ']').text
-        player.append(points_made)
-        j = j + 1
-        inner_counter = str(j)
-
-        field_goals_made = browser.find_element_by_xpath('//tr[' + outer_counter + ']/td[' + inner_counter + ']').text
-        player.append(field_goals_made)
-        j = j + 1
-        inner_counter = str(j)
-
-        field_goals_attempted = browser.find_element_by_xpath('//tr[' + outer_counter + ']/td[' + inner_counter + ']').text
-        player.append(field_goals_attempted)
-        j = j + 1
-        inner_counter = str(j)
-
-        field_goal_percentage = browser.find_element_by_xpath('//tr[' + outer_counter + ']/td[' + inner_counter + ']').text
-        player.append(field_goal_percentage)
-        j = j + 1
-        inner_counter = str(j)
-
-        three_pointers_made = browser.find_element_by_xpath('//tr[' + outer_counter + ']/td[' + inner_counter + ']').text
-        player.append(three_pointers_made)
-        j = j + 1
-        inner_counter = str(j)
-
-        three_pointers_attempted = browser.find_element_by_xpath('//tr[' + outer_counter + ']/td[' + inner_counter + ']').text
-        player.append(three_pointers_attempted)
-        j = j + 1
-        inner_counter = str(j)
-
-        three_point_percentage = browser.find_element_by_xpath('//tr[' + outer_counter + ']/td[' + inner_counter + ']').text
-        player.append(three_point_percentage)
-        j = j + 1
-        inner_counter = str(j)
-
-        free_throws_made = browser.find_element_by_xpath('//tr[' + outer_counter + ']/td[' + inner_counter + ']').text
-        player.append(free_throws_made)
-        j = j + 1
-        inner_counter = str(j)
-
-        free_throws_attempted = browser.find_element_by_xpath('//tr[' + outer_counter + ']/td[' + inner_counter + ']').text
-        player.append(free_throws_attempted)
-        j = j + 1
-        inner_counter = str(j)
-
-        free_throws_percentage = browser.find_element_by_xpath('//tr[' + outer_counter + ']/td[' + inner_counter + ']').text
-        player.append(free_throws_percentage)
-        j = j + 1
-        inner_counter = str(j)
-
-        offensive_rebounds = browser.find_element_by_xpath('//tr[' + outer_counter + ']/td[' + inner_counter + ']').text
-        player.append(offensive_rebounds)
-        j = j + 1
-        inner_counter = str(j)
-
-        defensive_rebounds = browser.find_element_by_xpath('//tr[' + outer_counter + ']/td[' + inner_counter + ']').text
-        player.append(defensive_rebounds)
-        j = j + 1
-        inner_counter = str(j)
-
-        total_rebounds = browser.find_element_by_xpath('//tr[' + outer_counter + ']/td[' + inner_counter + ']').text
-        player.append(total_rebounds)
-        j = j + 1
-        inner_counter = str(j)
-
-        total_assists = browser.find_element_by_xpath('//tr[' + outer_counter + ']/td[' + inner_counter + ']').text
-        player.append(total_assists)
-        j = j + 1
-        inner_counter = str(j)
-
-        total_steals = browser.find_element_by_xpath('//tr[' + outer_counter + ']/td[' + inner_counter + ']').text
-        player.append(total_steals)
-        j = j + 1
-        inner_counter = str(j)
-
-        total_blocks = browser.find_element_by_xpath('//tr[' + outer_counter + ']/td[' + inner_counter + ']').text
-        player.append(total_blocks)
-        j = j + 1
-        inner_counter = str(j)
-
-        total_turnovers = browser.find_element_by_xpath('//tr[' + outer_counter + ']/td[' + inner_counter + ']').text
-        player.append(total_turnovers)
-        j = j + 1
-        inner_counter = str(j)
-
-        personal_fouls = browser.find_element_by_xpath('//tr[' + outer_counter + ']/td[' + inner_counter + ']').text
-        player.append(personal_fouls)
-        j = j + 1
-        inner_counter = str(j)
-
-        efficiency_rating = browser.find_element_by_xpath('//tr[' + outer_counter + ']/td[' + inner_counter + ']').text
-        player.append(efficiency_rating)
-        j = j + 1
-        inner_counter = str(j)
-
-        assists_to_turnovers = browser.find_element_by_xpath('//tr[' + outer_counter + ']/td[' + inner_counter + ']').text
-        player.append(assists_to_turnovers)
-        j = j + 1
-        inner_counter = str(j)
-
-        steals_to_turnovers = browser.find_element_by_xpath('//tr[' + outer_counter + ']/td[' + inner_counter + ']').text
-        player.append(steals_to_turnovers)
-        j = j + 1
-        inner_counter = str(j)
+        while j <= 25:
+            if j == 2:
+                info = browser.find_element_by_xpath('//tr[' + outer_counter + ']/td[' + inner_counter + ']').text
+            else:
+                info = float(browser.find_element_by_xpath('//tr[' + outer_counter + ']/td[' + inner_counter + ']').text)
+            player.append(info)
+            j = j + 1
+            inner_counter = str(j)
 
         player_list.append(player)
-
         j = 2
         inner_counter = str(j)
-
         i = i + 1
         outer_counter = str(i)
     except:
@@ -159,10 +47,11 @@ while k <= num_pages:
         k = k + 1
         continue
 
+browser.close()
+
 # Write the player statistics to a CSV file
 with open('player_stats.csv', 'w+') as my_csv:
     csvWriter = csv.writer(my_csv, delimiter = ',')
     csvWriter.writerows(player_list)
-
 
 
