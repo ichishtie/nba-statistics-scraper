@@ -24,20 +24,25 @@ A Python3 program that uses Selenium to scrape statistics from [stats.nba.com](s
    cd nba-statistics-scraper
    ```
 
-5. Navigate to the directory where you cloned the repository and then go to the folder labeled "scraper".
+6. Navigate to the directory where you cloned the repository and then go to the folder labeled "scraper".
    ```
    cd scraper
    ```
-6. Run the program.
+7. Run the program.
    
    Windows:
    ```
    python player_stats_scrape.py
    ```
    macOS:
+   If you have both Python2 and Python3 installed, run the program using:
    ```
    python3 player_stats_scrape.py
    ```
+   Otherwise, run the program using:
+   ```
+   player_stats_scrape.py
+   ```  
    
 Note: A CSV file will be created in the "scraper" folder. This file will contain the statistics gathered by the program.
 
