@@ -14,10 +14,16 @@ A Python3 program that uses Selenium to scrape statistics from [stats.nba.com](s
 
 3. Open your command line or Terminal and navigate to the directory you would like to clone the repository.
 
-4. Clone the repository
+4. Clone the repository.
    ```
    git clone https://github.com/ichishtie/nba-statistics-scraper
    ```
+
+5. Navigate to the local repository.
+   ```
+   cd nba-statistics-scraper
+   ```
+
 5. Navigate to the directory where you cloned the repository and then go to the folder labeled "scraper".
    ```
    cd scraper
