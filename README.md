@@ -6,8 +6,9 @@ A Python3 program that uses Selenium to scrape statistics from [stats.nba.com](s
 
 1. This program requires Selenium. If you have pip, install using:
    ```
-   pip install selenium
+   pip3 install selenium
    ```
+   
    Otherwise, download and install Selenium from [here](https://pypi.org/project/selenium/).
    
 2. To allow the program to interface with the Chrome browser, you must download [chomedriver](https://sites.google.com/a/chromium.org/chromedriver/downloads) and place it in your PATH. Save the executable file in your C Drive and make sure that it is saved under the name "chromedriver.exe", otherwise you will have to change the code on line 8 to match the destination of the chromedriver executable.
